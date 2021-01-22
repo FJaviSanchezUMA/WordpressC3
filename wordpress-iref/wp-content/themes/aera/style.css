@@ -1,0 +1,427 @@
+/*
+Theme Name: Aera
+Theme URI: https://www.nayrathemes.com/aera-free/
+Author: Nayra Themes
+Author URI: https://www.nayrathemes.com/
+Description: Aera is flexible, super fast, easily customizable, lightweight, modern multipurpose theme. Aera comes with everything you could ever need to build an amazing website, and It's perfect for any type of business. View the demo of Aera Pro https://www.nayrathemes.com/demo/pro/?theme=aera
+Template: avril
+Version: 1.0.8
+Tested up to: 5.6
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: aera
+Slug: aera
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu,  custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, photography, portfolio, editor-style, grid-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* ========= Aera >> Contact Info / Social Widget / Button  ========= */
+
+.aera-theme .contact-icon {
+    font-size: 33px;
+    height: auto;
+}
+
+.aera-theme .widget_social_widget li a {
+    width: 33px;
+    height: 33px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.aera-theme .header-search-popup form .search-field,
+.aera-theme button[type=submit],
+.aera-theme button:not(.scrollup),
+.aera-theme input[type="button"],
+.aera-theme input[type="reset"],
+.aera-theme input[type="submit"],
+.aera-theme .av-btn {
+    border-radius: 100px;
+}
+
+/* ========= Aera Header Search ========= */
+
+.aera-theme .header-search-popup {
+    z-index: -2;
+    visibility: hidden;
+    -webkit-transition: all 1s ease;
+    -khtml-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.aera-theme.header-search-active .header-search-popup {
+    z-index: 999;
+    visibility: visible;
+}
+
+.aera-theme .search-overlay-layer {
+    position: fixed;
+    width: 224vw;
+    height: 224vw;
+    top: calc(90px - 112vw);
+    right: calc(100px - 112vw);
+    z-index: 1;
+    display: block;
+    background-color: var(--sp-secondary);
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -khtml-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: transform .8s ease-in-out;
+    -khtml-transition: transform .8s ease-in-out;
+    -moz-transition: transform .8s ease-in-out;
+    -ms-transition: transform .8s ease-in-out;
+    -o-transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+    opacity: 0.9;
+}
+
+.aera-theme.header-search-active .search-overlay-layer {
+    -webkit-transform: scale(1);
+    -khtml-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -webkit-transition: transform 1.6s cubic-bezier(.4,0,0,1);
+    -khtml-transition: transform 1.6s cubic-bezier(.4,0,0,1);
+    -moz-transition: transform 1.6s cubic-bezier(.4,0,0,1);
+    -ms-transition: transform 1.6s cubic-bezier(.4,0,0,1);
+    -o-transition: transform 1.6s cubic-bezier(.4,0,0,1);
+    transition: transform 1.6s cubic-bezier(.4,0,0,1);
+}
+
+.aera-theme .header-search-popup form {
+    width: 0;
+    max-width: 680px;
+    -webkit-transition: opacity .5s 0s,width .8s .8s cubic-bezier(.225,.01,.475,1.01),transform .2s 0s;
+    -khtml-transition: opacity .5s 0s,width .8s .8s cubic-bezier(.225,.01,.475,1.01),transform .2s 0s;
+    -moz-transition: opacity .5s 0s,width .8s .8s cubic-bezier(.225,.01,.475,1.01),transform .2s 0s;
+    -ms-transition: opacity .5s 0s,width .8s .8s cubic-bezier(.225,.01,.475,1.01),transform .2s 0s;
+    -o-transition: opacity .5s 0s,width .8s .8s cubic-bezier(.225,.01,.475,1.01),transform .2s 0s;
+    transition: opacity .5s 0s,width .8s .8s cubic-bezier(.225,.01,.475,1.01),transform .2s 0s;
+    transition-delay: 0s,.4s,0s;
+    transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+}
+
+.aera-theme.header-search-active .header-search-popup form {
+    width: 100%;
+    transition-delay: .7s;
+    -webkit-transition-delay: .7s;
+}
+    
+.aera-theme .header-search-popup .header-search-close {
+    width: 55px;
+    height: 55px;
+    -webkit-transition: all .8s cubic-bezier(.4,0,0,1);
+    -khtml-transition: all .8s cubic-bezier(.4,0,0,1);
+    -moz-transition: all .8s cubic-bezier(.4,0,0,1);
+    -ms-transition: all .8s cubic-bezier(.4,0,0,1);
+    -o-transition: all .8s cubic-bezier(.4,0,0,1);
+    transition: all .8s cubic-bezier(.4,0,0,1);
+    transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -webkit-transform: scale(0);
+    -khtml-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.aera-theme .close-style:before,
+.aera-theme .close-style:after {
+    width: 22px;
+    -webkit-transition: all .3s linear 0ms;
+    -khtml-transition: all .3s linear 0ms;
+    -moz-transition: all .3s linear 0ms;
+    -ms-transition: all .3s linear 0ms;
+    -o-transition: all .3s linear 0ms;
+    transition: all .3s linear 0ms;
+}
+
+.aera-theme.header-search-active .header-search-popup .header-search-close {
+    -webkit-transform: scale(1);
+    -khtml-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+}
+
+.aera-theme.header-search-active .header-search-close:hover:before,
+.aera-theme.header-search-active .header-search-close:hover:after,
+.aera-theme.header-search-active .header-search-close:focus:before,
+.aera-theme.header-search-active .header-search-close:focus:after {
+    -webkit-transform: scale(1.25);
+    -khtml-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+/* ========= Aera Slider ========= */
+
+.aera-theme .main-slider .owl-nav {
+    left: auto;
+    bottom: 0;
+    top: 0;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.aera-theme .main-slider div.owl-nav [class*=owl-] {
+    border-radius: 0;
+    color: var(--sp-secondary);
+    background-color: var(--sp-white);
+    border-color: var(--sp-white);
+    width: 47px;
+    height: 47px;
+    line-height: 37px;
+    font-size: 20px;
+}
+
+.aera-theme .main-slider div.owl-nav [class*=owl-]:hover {
+	color: var(--sp-white);
+	background-color: var(--sp-primary);
+}
+
+.aera-theme .theme-content a.av-btn.av-btn-primary {
+    color: var(--sp-primary);
+    background-color: var(--sp-white);
+    border-color: var(--sp-white);
+}
+
+.aera-theme .theme-content a.av-btn.av-btn-primary:hover,
+.aera-theme .theme-content a.av-btn.av-btn-primary:focus {
+	color: var(--sp-white);
+	background-color: var(--sp-primary);
+	border-color: var(--sp-primary);
+}
+
+.aera-theme .theme-slider div.theme-content {
+	max-width: 100%;
+}
+
+.aera-theme .theme-slider .text-right [class*="av-column-"]:first-child {
+    order: 1;
+}
+
+.aera-theme .theme-slider .text-center [class*="av-column-"]:first-child {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.aera-theme .theme-slider .text-center [class*="av-column-"]:nth-child(2) img {
+    margin: auto;
+}
+
+.aera-theme .theme-slider .text-center [class*="av-column-"]:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.azwa-header-slider .owl-item .aera-img img {
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width:767px) {
+    .main-slider .owl-item .item {  }
+}
+
+@media only screen and (max-width:991px) {
+    .aera-theme .theme-slider div.theme-content {
+        margin-bottom: 15px;
+    }
+    .aera-theme .theme-slider .text-right [class*="av-column-"]:first-child {
+        order: 0;
+    }
+    .aera-theme .theme-slider [class*="av-column-"]:nth-child(2) {
+        margin-top: 2rem;
+    }
+}
+
+/* ========= Aera CTA Info ========= */
+
+@media only screen and (min-width:992px) {
+    .aera-theme .info-section {
+        margin: -100px 0px 20px 0px;
+    }
+}
+
+.info-area {
+    position: relative;
+    width: 100%;
+    background-color: var(--sp-white);
+    padding: 50px 20px 60px;
+    box-shadow: 0px 3px 30px -3px rgb(0 0 0 / 0.12);
+}
+
+.svg-clip-art {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    fill: #fff;
+}
+
+.svg-clip-art svg {
+    height: 45px;
+}
+
+.slider-wrapper .svg-clip-art {
+    bottom: -10px;
+}
+
+.info-area .svg-clip-art {
+    top: -70px;
+}
+
+.info-area .svg-clip-art svg {
+    height: 78px;
+}
+
+.info-area .info-wrapper [class*='info-'] .widget {
+    background: none;
+    padding: 6px 22px;
+}
+
+.info-area .info-wrapper [class*='info-'] .widget,
+.info-area .widget .contact-info {
+    color: var(--sp-secondary);
+}
+
+.info-area .info-wrapper .widget:after,
+.info-area .info-wrapper .widget:before {
+	display: none;
+}
+
+.info-area .info-wrapper .contact-area {
+	flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-area .contact-icon {
+	color: var(--sp-primary);
+}
+
+.info-area .contact-info span.text {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.info-area .contact-info span.title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info-area .contact-icon {
+    font-size: 52px;
+    margin-bottom: 12px;
+}
+
+.contact-more {
+    margin-top: 1.25rem;
+}
+
+.btn-arrow {
+    position: relative;
+    line-height: 30px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.btn-arrow:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 100%;
+    background-color: var(--sp-white);
+    transition: .3s ease-in-out;
+}
+
+.btn-arrow:after {
+    content: "\f054";
+    font-family: fontawesome;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--sp-white);
+    background-color: var(--sp-secondary);
+    border-radius: 0 15px 15px 0;
+    transition: .6s ease-in-out;
+}
+
+.btn-arrow:hover:before,
+.btn-arrow:focus:before {
+    left: -200%;
+}
+
+.btn-arrow:hover:after,
+.btn-arrow:focus:after {
+    color: var(--sp-white);
+    background-color: var(--sp-primary);
+    left: 104%;
+}
+
+.aera-theme .more-link:after {
+    content: "\f054";
+    border-radius: 0 15px 15px 0;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.info-area .svg-clip-art {
+	    display: none; 
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.aera-theme .main-slider .owl-nav {
+		display: none;
+	}
+	.info-area .info-wrapper [class*='info-'] .widget {
+	    padding: 15px 22px;
+	}
+	.svg-clip-art svg {
+	    height: 18px;
+	}
+}

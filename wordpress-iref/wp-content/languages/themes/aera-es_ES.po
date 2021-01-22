@@ -1,0 +1,68 @@
+# Translation of Themes - Aera in Spanish (Spain)
+# This file is distributed under the same license as the Themes - Aera package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-27 13:00:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Themes - Aera\n"
+
+#. Description of the theme
+msgid "Aera is flexible, super fast, easily customizable, lightweight, modern multipurpose theme. Aera comes with everything you could ever need to build an amazing website, and It's perfect for any type of business. View the demo of Aera Pro https://www.nayrathemes.com/demo/pro/?theme=aera"
+msgstr "Aera es un tema flexible, súper rápido, fácilmente personalizable, ligero, multiuso y moderno. Aera viene con todo lo que necesitas para construir una web increíble y es perfecto para cualquier tipo de negocio. Mira la demostración de Aera Pro en https://www.nayrathemes.com/demo/pro/?theme=aera"
+
+#. Theme Name of the theme
+msgid "Aera"
+msgstr "Aera"
+
+#: inc/customize/aera-premium.php:36
+msgid "Show Some Love"
+msgstr "Muestra algo de cariño"
+
+#: inc/customize/aera-premium.php:32
+msgid "Free Vs Pro"
+msgstr "Gratis frente a Pro"
+
+#: inc/customize/aera-premium.php:30
+msgid "Get Support"
+msgstr "Obtener soporte"
+
+#: inc/customize/aera-premium.php:28
+msgid "View Documentation"
+msgstr "Ver la documentación"
+
+#: inc/customize/aera-premium.php:12 inc/customize/aera-premium.php:34
+msgid "Upgrade to Pro"
+msgstr "Actualizar a Pro"
+
+#: template-parts/sections/section-header.php:157
+msgid "Type To Search"
+msgstr "Escribe para buscar"
+
+#: template-parts/sections/section-header.php:156
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: template-parts/sections/section-header.php:155
+msgid "Site Search"
+msgstr "Buscar en el sitio"
+
+#: header.php:18
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#. Author URI of the theme
+msgid "https://www.nayrathemes.com/"
+msgstr "https://www.nayrathemes.com/"
+
+#. Theme URI of the theme
+msgid "https://www.nayrathemes.com/aera-free/"
+msgstr "https://www.nayrathemes.com/aera-free/"
+
+#. Author of the theme
+msgid "Nayra Themes"
+msgstr "Nayra Themes"
